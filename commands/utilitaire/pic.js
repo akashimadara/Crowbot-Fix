@@ -21,7 +21,6 @@ module.exports = {
 			const use = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author
 			const member = client.users.cache.get(use.id)
 			const Embed = new Discord.MessageEmbed()
-			Embed.setTitle(`Cette Photo De Profil Et Incroyable !!!`);
 			Embed.setDescription(`Voici La Photo De Profil De <@${member.id}>`)
 			Embed.setImage(`${member.displayAvatarURL({  dynamic: true })}`);
 			Embed.setTimestamp()
