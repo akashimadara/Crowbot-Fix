@@ -67,7 +67,7 @@ module.exports = {
 
                 user.roles.remove(muterole, `Unmute par ${message.author.tag}`)
 
-                message.channel.send(`${user} a été **unmute** (*le message s'envoie même si le membre n'est pas mute*)`);
+                message.channel.send(`${user} a été **unmute**`);
                 db.set(`mute_${message.guild.id}_${user.id}`, null)
 
                 user.send(`Vous avez été **unmute** sur **${message.guild.name}**`);
